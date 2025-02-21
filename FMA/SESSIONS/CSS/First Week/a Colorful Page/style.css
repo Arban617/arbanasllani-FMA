@@ -1,0 +1,19 @@
+body{
+    background-image: url(pexels-photo-38136.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+article, h1{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,105,10,1) 43%);
+color: azure;
+}
+ul{
+    background-color: beige;
+    opacity: 0.5;
+}
+footer{
+    background-color: antiquewhite;
+    opacity: 0.5;
+}
