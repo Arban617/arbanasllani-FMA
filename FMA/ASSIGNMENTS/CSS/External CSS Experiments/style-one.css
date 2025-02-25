@@ -1,0 +1,37 @@
+h1{
+    color: navy;
+    background-color: lightskyblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    opacity: 0.8;
+}
+.a{
+    color: lightgreen;
+    background-color: lightcoral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.b{
+    color: lightseagreen;
+    background-color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+#aa{
+    color: antiquewhite;
+    background-color: lightgreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+#bb{
+    color: lightgoldenrodyellow;
+    background-color: violet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+ul{
+    color: azure;
+    background-color: lightseagreen;
+    font-family: sans-serif;
+    font-size: 17px;
+}

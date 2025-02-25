@@ -1,19 +1,22 @@
 body{
-    background-image: url(pexels-photo-38136.jpeg);
-    background-size: cover;
+    background-image: url(forest.jpeg);
     background-repeat: no-repeat;
-
+background-size: cover;
 }
-article, h1{
+.aaa, h1{
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,105,10,1) 43%);
 color: azure;
+border: 2px solid black;
 }
-ul{
-    background-color: beige;
+ul, .d{
+    background-color: white;
     opacity: 0.5;
+    border: 2px solid black;
 }
-footer{
-    background-color: antiquewhite;
-    opacity: 0.5;
+a:link{
+    color: forestgreen;
+}
+a:visited{
+    color: forestgreen;
 }
