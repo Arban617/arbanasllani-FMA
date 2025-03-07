@@ -1,5 +1,5 @@
 .relative-div{
-    width: 410px;
+    width: 50%;
     position: relative;
     background-color: white;
     box-shadow: 10px 10px 10px grey;
@@ -14,8 +14,8 @@ button{
     background-color: red;
     border-radius: 100px;
     position: absolute;
-    left: 400px;
-    bottom: 50px;
+    left: 98%;
+    bottom: 85%;
     color: white;
 }
 h2{
@@ -30,8 +30,8 @@ p{
 }
 .video{
 position: fixed;
-left: 1180px;
-top: 450px;
+bottom: 0;
+right: 0;
 border: 2px solid black;
 padding: 20px;
 padding-bottom:7px ;
