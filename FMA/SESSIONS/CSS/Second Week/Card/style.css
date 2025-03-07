@@ -1,0 +1,25 @@
+.card{
+    margin-left: 600px;
+    border-radius: 25px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 10px 10px grey;
+    margin-top: 300px;
+    
+}
+button{
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    cursor: grab;
+}
+img{
+    border: 2px solid green;
+    margin-top: 7px;
+    border-radius: 50px;
+}
+body{
+    background-color: lightgray;
+}

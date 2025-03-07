@@ -1,9 +1,9 @@
 article:nth-child(even){
-    background-color: red;
+    background-color: lightcoral;
     color: antiquewhite;
 }
 article:nth-child(odd){
-    background-color: green;
+    background-color: lightcyan;
     color: darkorange;
 }
 article{

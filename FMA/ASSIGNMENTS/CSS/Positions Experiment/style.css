@@ -1,0 +1,46 @@
+.relative-div{
+    width: 410px;
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 5px;
+    margin-top: 60px;
+
+}
+body{
+    background-color: lightgrey;
+}
+button{
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
+    left: 400px;
+    bottom: 50px;
+    color: white;
+}
+h2{
+position: relative;
+bottom: 15px;
+left: 10px;
+}
+p{
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+}
+.video{
+position: fixed;
+left: 1180px;
+top: 450px;
+border: 2px solid black;
+padding: 20px;
+padding-bottom:7px ;
+padding-top: 0px;
+border-radius: 20px;
+}
+h3{
+    padding-left: 60px;
+}
+h3, h2, button{
+    font-family: Bahnschrift Light;
+}
