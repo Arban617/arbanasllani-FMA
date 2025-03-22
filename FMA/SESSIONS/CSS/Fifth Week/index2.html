@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        h1 {
+            margin-bottom: 0px;
+        }
+        .card {
+            height: 700px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid black;
+            box-shadow: 10px 10px 65px 8px rgba(2, 7, 18, 1);
+            font-family: Bahnschrift Light;
+        }
+
+        .down {
+            height: 80%;
+            color: white;
+            background-image: url(image.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .upper {
+            background-color: grey;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            gap: 4px;
+        }
+        .right {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 49%;
+            
+        }
+        .left {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 49%;
+        }
+        p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="upper">
+            <div class="left">
+                <h1>40c</h1>
+            </div>
+            <div class="right">
+                <span>
+                    <h1>21</h1>
+                </span>
+                <span>March</span>
+                <span>2025</span>
+            </div>
+        </div>
+        <div class="down">
+            <p>Flexbox</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body{
+    background-image: url(patterns.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em 20% 0 20%;
+    font-family: Corbel Light;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.sections{
+    background-color:rgba(173, 216, 230, 0.87);
+    color: black;
+    border-radius: 7px;
+    border: 1px solid white;
+    margin-top: 20px;
+    text-align: center;
+    list-style-type: none; 
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 10px 10px 65px 8px rgba(2,7,18,1);
+}
+.navigation{
+    margin-right: 19px;
+}
+.sections:hover{
+background-color: cadetblue;
+border: 3px solid white;
+}
+.inline-list{
+    display: inline;
+}
+button{
+    border-radius:25px;
+}
+button:hover{
+    background-color: cornflowerblue;
+}
+table{
+    margin-left: 23%;
+    margin-bottom: 30px;
+}
+.list-border{
+    width: 70%;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+img{
+    border-radius: 15px;
+    border: 4px solid lightseagreen;
+}
+th{
+    background-color: rgb(84, 139, 126);
+}
+td{
+    background-color: lightskyblue;
+}
+li{
+    list-style-type: none;
+}
+.list{
+    background-color:rgba(173, 216, 230, 0.87);
+    color: black;
+    border-radius: 7px;
+    border: 1px solid white;
+    margin-top: 20px;
+    box-shadow: 10px 10px 65px 8px rgba(2,7,18,1);
+}
+.list:hover{
+    background-color: cadetblue;
+}
+.image-background-contact-background{
+    background-color: rgba(223, 235, 239, 0.7);
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+input{
+    width: 60%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 10px;
+    padding-top: 5px;
+}
+.education{
+    margin-left: 45%;
+}
