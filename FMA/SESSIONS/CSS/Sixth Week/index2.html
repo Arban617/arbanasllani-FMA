@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 300px 1fr;
+        }
+        header{
+            grid-column: 1/4;
+            grid-row: 1/2;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>I am a header</header>
+    <aside>I am the aside</aside>
+    <main>I am the main</main>
+    <footer>I am the footer</footer>
+</body>
+</html>

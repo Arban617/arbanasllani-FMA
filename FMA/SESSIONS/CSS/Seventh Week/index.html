@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes changingcolors{
+            from{
+                
+            }
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        img{
+            border-radius: 50%;
+            filter: blur(10px);
+            display: flex;
+            justify-self: center;
+            align-self: center;
+        }
+        img:hover{
+            transition: transform 0.5s ease-in-out;
+            transform: rotate(360deg);
+            filter: none;
+        }
+        .tooltip{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="jupiter.jpg" alt="image" width="100px" height="100px">
+    <p>Hello</p>
+    <button title="Tooltip for submit button">Submit</button>
+</body>
+</html>

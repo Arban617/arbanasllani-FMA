@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogpost</title>
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 20vw 1fr;
+            grid-template-rows: 1fr;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        aside{
+            display: flex;
+            align-items: center;
+            grid-row: 1;
+            grid-column: 1/2;
+            background-color: rgb(2, 2, 23);
+            color: white;
+            text-align: right;
+            font-family: Bahnschrift;
+            padding-right: 20px;
+        }
+        .asideh1{
+            font-size: 50px;
+        }
+        .asidep{
+            font-weight: 1px;
+            font-family: Bahnschrift Light;
+            color: lightblue;
+        }
+        .login{
+            font-weight: 1;
+            font-size: 22px;
+            border: 1px solid white;
+            width: 100px;
+            padding-right: 40px;
+            margin-left: 45%;
+            margin-top: 70px;
+        }
+        main{
+            grid-column: 2/3;
+            grid-row: 1;
+            margin-left: 20px;
+            font-family: Bahnschrift;
+        }
+        .pinnedlatest{
+            font-family: Bahnschrift;
+            opacity: 0.5;
+        }
+        .imgh1{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -50px;
+        }
+        img{
+            border-radius: 50px;
+            margin: 50px;
+        }
+        .HTML{
+            background-color: green;
+            color: white;
+            border: none;
+        }
+        .CSS{
+            background-color: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="aside">
+                <h1 class="asideh1">A SIMPLE BLOGPOST</h1>
+                <p class="asidep">A sample blogpost</p>
+                <p class="login">Log In</p>
+            </div>
+        </aside>
+        <main>
+            <div class="main">
+                <p class="pinnedlatest">PINNED POST</p>
+                <hr>
+                <div class="imgh1">
+                    <h1 class="mainh1">A pinned post</h1>
+                    <img src="pfpp.png" alt="pfp" width="50px" height="50px">  
+                </div>
+                <p class="Person">By <span class="John Doe">John Doe</span> under <button class="HTML">HTML</button> and <button class="CSS">CSS</button></p>
+                <p class="mainp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed officiis temporibus delectus vel, saepe sint nemo, quia, optio facere odit a aperiam. Adipisci voluptatum accusamus consequuntur? Asperiores, quisquam facere?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nisi ducimus ipsum beatae quod illo itaque repellendus adipisci, tempora cupiditate voluptates vitae, accusantium recusandae officiis saepe nobis nesciunt commodi expedita?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure voluptatem beatae cumque, dicta illo ipsum eligendi sequi. Modi temporibus alias veniam culpa deserunt quidem reprehenderit dolorem dolorum repellendus animi?</p>
+                <br>
+                <p class="pinnedlatest">PINNED POST</p>
+                <hr>
+                <div class="imgh1">
+                    <h1 class="mainh1">A recent post</h1>
+                    <img src="pfpp.png" alt="pfp" width="50px" height="50px">  
+                </div>
+                <p class="Person">By <span class="John Doe">John Doe</span> under <button class="HTML">HTML</button> and <button class="CSS">CSS</button></p>
+                <p class="mainp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed officiis temporibus delectus vel, saepe sint nemo, quia, optio facere odit a aperiam. Adipisci voluptatum accusamus consequuntur? Asperiores, quisquam facere?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nisi ducimus ipsum beatae quod illo itaque repellendus adipisci, tempora cupiditate voluptates vitae, accusantium recusandae officiis saepe nobis nesciunt commodi expedita?Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure voluptatem beatae cumque, dicta illo ipsum eligendi sequi. Modi temporibus alias veniam culpa deserunt quidem reprehenderit dolorem dolorum repellendus animi?</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

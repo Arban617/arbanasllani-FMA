@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        :root{
+            --main-aside-font-color:white;
+            --main-font:Roboto;
+            --main-page-color:rgb(238, 238, 238);
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 18% 1fr;
+            grid-template-rows: 10% 1fr 10%;
+            font-family: var(--main-font);
+            background-color: var(--main-page-color);
+        }
+        aside{
+            grid-column: 1/2;
+            grid-row: 1/4;
+            background: url(images/images/sidebar-1.jpg); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.65);
+            background-blend-mode: darken;  
+            color: var(--main-aside-font-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 26%;
+            padding-right: 5%;
+            padding-left: 8%;
+        }
+        .material-icons{
+            color: white;
+        }
+        .dashboard{
+            display: flex;
+            align-items: center;
+            gap: 13%;
+            border: none;
+            border-radius: 3px;
+            background-color: orangered;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            margin-left: -5%;
+        }
+        .sidebar-options{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            margin-left: -5%;
+        }
+        .sidebar-options:hover{
+            background-color: rgba(210, 203, 203, 0.35);  
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .avatar{
+            width: 37px;
+            height: 37px;
+            border-radius: 50%;
+        }
+        .page-title{
+            display: flex;
+            align-items: center;
+            gap: 13%; 
+            font-size: larger;
+        }
+        hr{
+            margin: 0;
+        }
+        .profile{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 13%;
+            border: none;
+            border-radius: 3px;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 5%;
+            margin-left: -5%; 
+        }
+        header{
+            grid-row: 1/2;
+            grid-column: 2/3;
+            margin-right: 3%;
+            margin-left: 3%;
+            margin-top: 1.2%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-dashboard-search{
+            border-radius: 50%;
+            background-color: white;
+            color: darkgrey;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
+-moz-box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
+box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
+        }
+        .header-right{
+            display: flex;
+            align-items: center;
+            gap: 21px;
+        }
+        .header-left{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header-icons{
+            color: rgb(108, 108, 108);
+        }
+        .search-bar{
+            border: none;
+            font-family: var(--main-font);
+            background-color: var(--main-page-color);
+            font-size: 18px;
+        }
+        .search-bar:focus{
+            outline: none;
+        }
+        .search-bar-underline{
+            width: 170px;
+            height: 1.4px;
+            background-color: darkgrey;
+        }
+        .search-bar-underline:hover{
+            background-color: blueviolet;
+        }
+        .search-bar-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="header-left">
+        <span class="material-icons header-dashboard-search">
+            more_vert
+            </span>Dashboard
+        </div>
+
+        <div class="header-right">
+            <div class="search-bar-div">
+                <input type="text" class="search-bar" placeholder="Search">
+                <div class="search-bar-underline"></div>
+            </div>
+            <span class="material-icons header-dashboard-search">
+                search
+                </span>
+                <span class="material-icons header-icons">
+                    dashboard
+                    </span>
+                    <span class="material-icons header-icons">
+                        notifications
+                        </span>
+                        <span class="material-icons header-icons">
+                            person
+                            </span>
+        </div> 
+    </header>
+    <aside>
+        <div class="page-title">
+            <p>CP</p>
+            <p>COOL PAGE</p>
+        </div>
+        <hr>
+        <div class="profile">
+            <div class="left">
+                <img src="images/images/avatar.jpg" alt="avatar" class="avatar">John Doe
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <hr>
+        <div class="dashboard">
+            <span class="material-icons">
+                dashboard
+                </span>Dashboard
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    crop_original
+                    </span>Pages
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    apps
+                    </span>Components
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    content_paste
+                    </span>Forms
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    grid_on
+                    </span>Tables
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    location_on
+                    </span>Maps
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    widgets
+                    </span>Widgets
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    show_chart
+                    </span>Charts
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+        <div class="sidebar-options">
+            <div class="left">
+                <span class="material-icons">
+                    date_range
+                    </span>Calendar
+            </div>
+            <div class="right">
+                <span class="material-icons">
+                    expand_more
+                    </span>
+            </div>
+        </div>
+    </aside>
+   <main></main> 
+   <footer></footer>
+</body>
+</html>
