@@ -6,192 +6,48 @@
     <title>Cool Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
     <style>
-        :root{
-            --main-aside-font-color:white;
-            --main-font:Roboto;
-            --main-page-color:rgb(238, 238, 238);
-        }
-        body{
-            padding: 0;
-            margin: 0;
-            width: 100vw;
-            height: 100vh;
-            display: grid;
-            grid-template-columns: 18% 1fr;
-            grid-template-rows: 10% 1fr 10%;
-            font-family: var(--main-font);
-            background-color: var(--main-page-color);
-        }
-        aside{
-            grid-column: 1/2;
-            grid-row: 1/4;
-            background: url(images/images/sidebar-1.jpg); 
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-color: rgba(0, 0, 0, 0.65);
-            background-blend-mode: darken;  
-            color: var(--main-aside-font-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-bottom: 26%;
-            padding-right: 5%;
-            padding-left: 8%;
-        }
-        .material-icons{
-            color: white;
-        }
-        .dashboard{
-            display: flex;
-            align-items: center;
-            gap: 13%;
-            border: none;
-            border-radius: 3px;
-            background-color: orangered;
-            padding-top: 5%;
-            padding-bottom: 5%;
-            padding-left: 5%;
-            margin-left: -5%;
-        }
-        .sidebar-options{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-            border: none;
-            border-radius: 3px;
-            padding-top: 5%;
-            padding-bottom: 5%;
-            padding-left: 5%;
-            margin-left: -5%;
-        }
-        .sidebar-options:hover{
-            background-color: rgba(210, 203, 203, 0.35);  
-        }
-        .left{
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-        .avatar{
-            width: 37px;
-            height: 37px;
-            border-radius: 50%;
-        }
-        .page-title{
-            display: flex;
-            align-items: center;
-            gap: 13%; 
-            font-size: larger;
-        }
-        hr{
-            margin: 0;
-        }
-        .profile{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 13%;
-            border: none;
-            border-radius: 3px;
-            padding-top: 5%;
-            padding-bottom: 5%;
-            padding-left: 5%;
-            margin-left: -5%; 
-        }
-        header{
-            grid-row: 1/2;
-            grid-column: 2/3;
-            margin-right: 3%;
-            margin-left: 3%;
-            margin-top: 1.2%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-dashboard-search{
-            border-radius: 50%;
-            background-color: white;
-            color: darkgrey;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            -webkit-box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
--moz-box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
-box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
-        }
-        .header-right{
-            display: flex;
-            align-items: center;
-            gap: 21px;
-        }
-        .header-left{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .header-icons{
-            color: rgb(108, 108, 108);
-        }
-        .search-bar{
-            border: none;
-            font-family: var(--main-font);
-            background-color: var(--main-page-color);
-            font-size: 18px;
-        }
-        .search-bar:focus{
-            outline: none;
-        }
-        .search-bar-underline{
-            width: 170px;
-            height: 1.4px;
-            background-color: darkgrey;
-        }
-        .search-bar-underline:hover{
-            background-color: blueviolet;
-        }
-        .search-bar-div{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
     </style>
 </head>
 <body>
     <header>
        <div class="header-left">
-        <span class="material-icons header-dashboard-search">
+        <span class="material-icons header-dashboard-search cursor-change" title="See More">
             more_vert
             </span>Dashboard
         </div>
 
         <div class="header-right">
-            <div class="search-bar-div">
                 <input type="text" class="search-bar" placeholder="Search">
-                <div class="search-bar-underline"></div>
-            </div>
-            <span class="material-icons header-dashboard-search">
+            <span class="material-icons header-dashboard-search cursor-change" title="Search">
                 search
                 </span>
-                <span class="material-icons header-icons">
+                <span class="material-icons header-icons cursor-change" title="Dashboard">
                     dashboard
                     </span>
-                    <span class="material-icons header-icons">
-                        notifications
-                        </span>
-                        <span class="material-icons header-icons">
+                    <div class="notifications">
+                        <ul class="notifications-dropdown">
+                            <li>John Doe sent you a message</li>
+                            <li>Someone viewed your profile</li>
+                            <li>John Doe sent you a message</li>
+                            <li>Someone viewed your profile</li>
+                            <li>Another notification</li>
+                        </ul>
+                        <span class="material-icons header-icons cursor-change notification-icon" title="Notifications">
+                            notifications
+                            </span>
+                    </div>
+                        <span class="material-icons header-icons cursor-change" title="Profile">
                             person
                             </span>
         </div> 
     </header>
     <aside>
-        <div class="page-title">
+        <div class="page-title cursor-change">
             <p>CP</p>
             <p>COOL PAGE</p>
         </div>
-        <hr>
         <div class="profile">
             <div class="left">
                 <img src="images/images/avatar.jpg" alt="avatar" class="avatar">John Doe
@@ -202,8 +58,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <hr>
-        <div class="dashboard">
+        <div class="dashboard cursor-change">
             <span class="material-icons">
                 dashboard
                 </span>Dashboard
@@ -220,7 +75,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     apps
@@ -232,7 +87,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     content_paste
@@ -244,7 +99,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     grid_on
@@ -256,7 +111,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     location_on
@@ -268,7 +123,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     widgets
@@ -280,7 +135,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     show_chart
@@ -292,7 +147,7 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
                     </span>
             </div>
         </div>
-        <div class="sidebar-options">
+        <div class="sidebar-options cursor-change">
             <div class="left">
                 <span class="material-icons">
                     date_range
@@ -305,7 +160,86 @@ box-shadow: -1px -6px 25px -1px rgba(0,0,0,0.37);
             </div>
         </div>
     </aside>
-   <main></main> 
+   <main>
+    <div class="section-1">
+        <p class="section-1-title">
+            Global Sales by Top Locations
+        </p>
+        <span class="material-icons world">
+            language
+            </span>
+            <div class="table">
+                <table>
+                        <tr>
+                            <div class="tr">
+                            <div class="tr-left">
+                                <img src="images/images/usa.png" alt="usa-flag">USA     
+                            </div>
+                            <div class="tr-right">
+                                <p>2.920</p>
+                                <p>53.23%</p>
+                            </div>
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="tr">
+                                <div class="tr-left">
+                                    <img src="images/images/germany.png" alt="germany-flag">Germany   
+                                </div>
+                                <div class="tr-right">
+                                    <p>1.300</p>
+                                    <p>4.34%</p>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="tr">
+                                <div class="tr-left">
+                                    <img src="images/images/australia.png" alt="australia-flag">Australia     
+                                </div>
+                                <div class="tr-right">
+                                    <p>760</p>
+                                    <p>20.43%</p>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="tr">
+                                <div class="tr-left">
+                                    <img src="images/images/uk.png" alt="uk-flag">UK     
+                                </div>
+                                <div class="tr-right">
+                                    <p>690</p>
+                                    <p>10.35%</p>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="tr">
+                                <div class="tr-left">
+                                    <img src="images/images/romania.png" alt="romania-flag">Romania     
+                                </div>
+                                <div class="tr-right">
+                                    <p>600</p>
+                                    <p>7.87%</p>
+                                </div>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="tr">
+                                <div class="tr-left">
+                                    <img src="images/images/brasil.png" alt="brasil-flag">Brasil     
+                                </div>
+                                <div class="tr-right">
+                                    <p>550</p>
+                                    <p>5.94%%</p>
+                                </div>
+                            </div>
+                        </tr>
+                </table>
+            </div>
+    </div>
+   </main> 
    <footer></footer>
 </body>
 </html>
