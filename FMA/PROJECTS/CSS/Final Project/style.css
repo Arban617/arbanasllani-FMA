@@ -10,13 +10,14 @@ body{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 18% 1fr;
+    grid-template-columns: 20% 1fr;
     grid-template-rows: 10% 1fr 10%;
     font-family: var(--main-font);
     background-color: var(--main-page-color);
     font-weight: lighter;
 }
 aside{
+    width: 20%;
     grid-column: 1/2;
     grid-row: 1/4;
     background: url(images/images/sidebar-1.jpg); 
@@ -28,10 +29,12 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 26%;
-    padding-right: 5%;
-    padding-left: 8%;
+    position: fixed;
     overflow-y: scroll;
+    height: 100vh;
+}
+.last-option{
+    margin-bottom: 100px;
 }
 .material-icons{
     color: white;
@@ -43,11 +46,10 @@ aside{
     border: none;
     border-radius: 3px;
     background-color: orangered;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    margin-left: -5%;
-    margin-top: 10%;
+    padding: 5%;
+    margin-left: 5%;
+    margin: 5%;
+    margin-top: 20px;
 }
 .sidebar-options{
     display: flex;
@@ -55,12 +57,11 @@ aside{
     align-items: center;
     gap: 30px;
     border: none;
+    padding: 5%;
     border-radius: 3px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    margin-left: -5%;
-    margin-top: 10%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .sidebar-options:hover{
     background-color: rgba(210, 203, 203, 0.35);  
@@ -80,6 +81,8 @@ aside{
     align-items: center;
     gap: 13%; 
     font-size: larger;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .profile{
     display: flex;
@@ -90,7 +93,8 @@ aside{
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5%;
-    margin-left: -5%; 
+    margin-left: 5%; 
+    margin-right: 5%;
     border-bottom: 1px solid darkgrey;
     border-top: 1px solid darkgray;
     padding-top: 20px;
@@ -164,7 +168,7 @@ cursor: pointer;
     position: absolute;
     right: 100px;
     background-color: white;
-    width: 240px;
+    width: 280px;
     padding-left: 0px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -173,39 +177,48 @@ cursor: pointer;
 li{
     border-radius: 3px;
     margin: 10px;
-    padding: 4px;
+    padding: 6px;
 }
 li:hover{
     background-color: orangered;
 }
 .notifications:hover .notifications-dropdown{
     display: block;
+    
 }
 main{
+    margin-left: 0;
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
 }
 .section-1{
+    width: 95%;
+    position: relative;
     background-color: var(--second-page-color);
     border-radius: 6px;
-    width: 95%;
     height: 60%;
     margin-top: 5%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:15px;
 }
 .section-1-title{
     font-size:x-large;
     font-weight: lighter;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 .world{
     color: white;
     background-color: rgb(47, 152, 47);
     padding: 22px;
     position: absolute;
-    top: 130px;
-    left: 330px;
+    bottom: 300px;
+    left: 20px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
 }
 .tr-left{
@@ -229,4 +242,122 @@ main{
     justify-content: space-between;
     align-items: center;
     height: 40px;
+}
+iframe{
+    width: 850px;
+    height: 250px;
+    margin-right:0px;
+    border: none;
+    margin-left: 40px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.section-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 30px;
+    margin-left:15px;
+}
+.card{
+    background-color: var(--second-page-color);
+    position: relative;
+    width: 565px;
+    height: 150px;
+    border-radius: 8px;
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    justify-self: center;
+    border-bottom: 1px solid darkgray ;
+}
+.couch{
+    color: white;
+    background-color: rgb(255, 179, 0);
+    padding: 22px;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.card-top-left{
+    margin-right: 20px;
+}
+.card-top-p-1{
+    opacity: 0.5;
+}
+.card-top-p-2{
+    font-size: x-large;
+    font-weight: 130px;
+    margin-top: 0px;
+}
+.card-bottom{
+    opacity: 0.5;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+.chart{
+    color: white;
+    background-color: rgb(196, 38, 59);
+    padding: 22px;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.earth{
+    color: white;
+    background-color: rgb(38, 157, 196);
+    padding: 22px;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.store{
+    color: white;
+    background-color: rgb(17, 138, 15);
+    padding: 22px;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.section-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    width: 95%;
+    margin-left:15px;
+}
+.s3-card{
+    width: 30.6%;
+    height: 450px;
+    background-color: var(--second-page-color);
+    position: relative;
+    text-align: center;
+}
+.s3-card-top{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-1{
+    width: 90%;
+    height: 45%;
+    position: absolute;
+    bottom: 270px;
+    border-radius: 5px;
+}
+.top-top{
+    display: flex;
+    justify-content: center;
 }
