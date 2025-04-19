@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Hover Reveal Icons</title>
+  <style>
+    body {
+      background: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .s3-card {
+      width: 320px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .image-wrapper {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .image-floater {
+      position: relative;
+      z-index: 2;
+      transition: transform 0.4s ease;
+    }
+
+    .card-1 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-icons {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.95);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-icons .material-icons {
+      background: #fff;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-size: 20px;
+      color: #444;
+    }
+
+    .s3-card:hover .image-floater {
+      transform: translateY(-60px);
+    }
+
+    .s3-card:hover .image-icons {
+      opacity: 1;
+    }
+
+    .top-bottom {
+      padding: 15px;
+    }
+
+    .card-1-p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .card-1-p2 {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .s3-card-bottom {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #eee;
+    }
+
+    .bottom-right {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #555;
+    }
+
+    .bottom-left p {
+      font-weight: bold;
+      color: #222;
+    }
+
+    .material-icons.header-icons {
+      font-size: 18px;
+      color: #ff6b6b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="s3-card">
+    <div class="image-wrapper">
+      <div class="image-floater">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Apartment" class="card-1">
+      </div>
+      <div class="image-icons">
+        <span class="material-icons">favorite</span>
+        <span class="material-icons">share</span>
+        <span class="material-icons">visibility</span>
+      </div>
+    </div>
+
+    <div class="top-bottom">
+      <p class="card-1-p">Cozy 5 Stars Apartment</p>
+      <p class="card-1-p2">Modern apartment in the heart of Milan with stunning views and great amenities.</p>
+    </div>
+
+    <div class="s3-card-bottom">
+      <div class="bottom-left">
+        <p>$449/night</p>
+      </div>
+      <div class="bottom-right">
+        <span class="material-icons header-icons">location_on</span>
+        Milan, Italy
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

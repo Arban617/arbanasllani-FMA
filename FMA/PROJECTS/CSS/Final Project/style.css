@@ -164,12 +164,13 @@ cursor: pointer;
     position: relative;
     display: inline-block;
     cursor: pointer;
+
 }
 .notifications-dropdown{
     display: none;
     position: absolute;
     top: 30px;
-    right: 83px;
+    right: 80px;
     background-color: white;
     width: 300px;
     padding-left: 0px;
@@ -177,7 +178,7 @@ cursor: pointer;
     border-radius: 5px;
     list-style: none;
     z-index: 1;
-    border: 15px solid rgba(147, 75, 75, 0.01);
+    transition: transform 0.4s ease;
 }
 li{
     border-radius: 3px;
@@ -336,54 +337,54 @@ iframe{
     gap: 2.5%;
     width: 95%;
 }
-.s3-card{
-    width: 31.6%;
-    height: 450px;
-    background-color: var(--second-page-color);
-    position: relative;
-    text-align: center;
-    border-radius: 7px;
-}
-.s3-card-top{
-    height: 85%;
+.card3{
     display: flex;
     flex-direction: column;
-    gap: 50%;
+    gap: 40%;
     align-items: center;
+    border-radius: 7px;
+    background-color: var(--second-page-color);
+    width: 31.6%;
+    height: 500px;
 }
-.card-1{
-    position: absolute;
-    bottom: 270px;
-    width: 90%;
+.card3-top{
     height: 50%;
-}
-.card-1:hover{
-    bottom: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 80%;
 }
 .top-top{
     position: relative;
+    width: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
 }
-.card-1-p{
-    font-size: larger;
-    font-weight: 380;
+.card3-photo{
+    position: absolute;
+    top: -30px;
+    width: 90%;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+
 }
-.card-1-p2{
-    margin-left: 10px;
-    margin-right: 10px;
-    opacity: 0.7;
+.top-top:hover .card3-photo{
+    transform: translateY(-30px);
 }
-.s3-card-bottom{
+.icons{
+    position: absolute;
+    top: 160px;
+    width: 95%;
+    border: 8px solid white;
+}
+.top-bottom{
     display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin-left: 20px;
-    border-top: 1px solid grey;
-}
-.bottom-right{
-    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 .edit{
     color: green;
@@ -391,9 +392,22 @@ iframe{
 .close{
     color: red;
 }
-.icons{
-    position: absolute;
-    top: 30%;
+.card3-bottom{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 80%;
+    border-top: 1px solid lightgrey;
+}
+.bottom-left, .bottom-right{
+    display: flex;
+    align-items: center;
+}
+.card3-p{
+    font-size: larger;
+    font-weight: 390;
+}
+.card3-p2{
+    opacity: 0.7;
 }
