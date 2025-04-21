@@ -8,24 +8,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
-    <style>
-    </style>
 </head>
-
 <body>
     <header>
         <div class="header-left">
-            <span class="material-icons header-dashboard-search cursor-change" title="See More">
+            <span class="material-icons round-icons cursor-change header-icons" title="See More">
                 more_vert
             </span>Dashboard
         </div>
 
         <div class="header-right">
-            <input type="text" class="search-bar" placeholder="Search">
-            <span class="material-icons header-dashboard-search cursor-change" title="Search">
+            <input type="text" class="search-bar" placeholder="Search" >
+            <span class="material-icons round-icons cursor-change header-icons" title="Search">
                 search
             </span>
-            <span class="material-icons header-icons cursor-change" title="Dashboard">
+            <span class="material-icons grey-icons cursor-change header-icons" title="Dashboard">
                 dashboard
             </span>
             <div class="notifications">
@@ -36,25 +33,25 @@
                     <li>Someone viewed your profile</li>
                     <li>Another notification</li>
                 </ul>
-                <span class="material-icons header-icons cursor-change notification-icon" title="Notifications">
+                <span class="material-icons grey-icons cursor-change notification-icon header-icons" title="Notifications">
                     notifications
                 </span>
             </div>
-            <span class="material-icons header-icons cursor-change" title="Profile">
+            <span class="material-icons grey-icons cursor-change header-icons" title="Profile">
                 person
             </span>
         </div>
     </header>
     <aside>
-        <div class="page-title cursor-change">
+        <div class="cool-page cursor-change">
             <p>CP</p>
             <p>COOL PAGE</p>
         </div>
         <div class="profile">
-            <div class="left">
+            <div class="aside-left">
                 <img src="images/images/avatar.jpg" alt="avatar" class="avatar">John Doe
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
@@ -66,96 +63,96 @@
             </span>Dashboard
         </div>
         <div class="sidebar-options">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     crop_original
                 </span>Pages
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     apps
                 </span>Components
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     content_paste
                 </span>Forms
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     grid_on
                 </span>Tables
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     location_on
                 </span>Maps
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     widgets
                 </span>Widgets
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     show_chart
                 </span>Charts
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
             </div>
         </div>
         <div class="sidebar-options cursor-change last-option">
-            <div class="left">
+            <div class="aside-left">
                 <span class="material-icons">
                     date_range
                 </span>Calendar
             </div>
-            <div class="right">
+            <div class="aside-right">
                 <span class="material-icons">
                     expand_more
                 </span>
@@ -164,7 +161,7 @@
     </aside>
     <main>
         <div class="section-1">
-            <div class="top">
+            <div class="section-1-top">
                 <p class="section-1-title">
                     Global Sales by Top Locations
                 </p>
@@ -172,7 +169,7 @@
                     language
                 </span>
             </div>
-            <div class="bottom">
+            <div class="section-1-bottom">
                 <div class="table">
                     <table>
                         <tr>
@@ -243,181 +240,196 @@
                         </tr>
                     </table>
                 </div>
-                <div class="embedded-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.0766974763!2d-74.30915211195304!3d40.696672688891866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1744728600449!5m2!1sen!2s"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                        allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="section-2">
-            <div class="card">
-                <div class="card-top">
-                    <div class="card-top-left">
+            <div class="section-2-card">
+                <div class="section-2-card-top">
+                    <div class="section-2-card-top-left">
                         <span class="material-icons couch">
                             weekend
                         </span>
                     </div>
-                    <div class="card-top-left">
-                        <p class="card-top-p-1">Bookings</p>
-                        <p class="card-top-p-2">184</p>
+                    <div class="section-2-card-top-right">
+                        <p class="section-2-p">Bookings</p>
+                        <p class="section-2-p2">184</p>
                     </div>
                 </div>
-                <div class="card-bottom">
-                    <span class="material-icons header-icons">
+                <div class="section-2-card-bottom">
+                    <span class="material-icons grey-icons smaller-icons">
                         warning
                     </span>Get more space!
                 </div>
             </div>
-            <div class="card">
-                <div class="card-top">
-                    <div class="card-top-left">
+            <div class="section-2-card">
+                <div class="section-2-card-top">
+                    <div class="section-2-card-top-left">
                         <span class="material-icons chart">
                             equalizer
                         </span>
                     </div>
-                    <div class="card-top-left">
-                        <p class="card-top-p-1">Website Visits</p>
-                        <p class="card-top-p-2">75.521</p>
+                    <div class="section-2-card-top-right">
+                        <p class="section-2-p">Website Visits</p>
+                        <p class="section-2-p2">75.521</p>
                     </div>
                 </div>
-                <div class="card-bottom">
-                    <span class="material-icons header-icons">
+                <div class="section-2-card-bottom">
+                    <span class="material-icons grey-icons smaller-icons">
                         local_offer
                     </span>Tracked from Google Analytics
                 </div>
             </div>
-            <div class="card">
-                <div class="card-top">
-                    <div class="card-top-left">
+            <div class="section-2-card">
+                <div class="section-2-card-top">
+                    <div class="section-2-card-top-left">
                         <span class="material-icons store">
                             store
                         </span>
                     </div>
-                    <div class="card-top-left">
-                        <p class="card-top-p-1">Revenue</p>
-                        <p class="card-top-p-2">$34,245</p>
+                    <div class="section-2-card-top-right">
+                        <p class="section-2-p">Revenue</p>
+                        <p class="section-2-p2">$34,245</p>
                     </div>
                 </div>
-                <div class="card-bottom">
-                    <span class="material-icons header-icons">
+                <div class="section-2-card-bottom">
+                    <span class="material-icons grey-icons smaller-icons">
                         date_range
                     </span>Last 24 Hours
                 </div>
             </div>
-            <div class="card">
-                <div class="card-top">
-                    <div class="card-top-left">
+            <div class="section-2-card">
+                <div class="section-2-card-top">
+                    <div class="section-2-card-top-left">
                         <span class="material-icons earth">
                             public
                         </span>
                     </div>
-                    <div class="card-top-left">
-                        <p class="card-top-p-1">Followers</p>
-                        <p class="card-top-p-2">+245</p>
+                    <div class="section-2-card-top-right">
+                        <p class="section-2-p">Followers</p>
+                        <p class="section-2-p2">+245</p>
                     </div>
                 </div>
-                <div class="card-bottom">
-                    <span class="material-icons header-icons">
+                <div class="section-2-card-bottom">
+                    <span class="material-icons grey-icons smaller-icons">
                         update
                     </span>Just Updated
                 </div>
             </div>
         </div>
         <div class="section-3">
-            <div class="card3">
-                <div class="card3-top">
-                    <div class="top-top">
-                        <div class="icons">
-                            <span class="material-icons header-icons" title="View">
-                                image
-                                </span>
-                                <span class="material-icons edit" title="Edit">
-                                    edit
+            <div class="section-3-card">
+                <div class="section-3-card-top">
+                    <div class="section-3-card-top-top">
+                        <div class="animation-card">
+                            <div class="ani-card">
+                                <span class="material-icons grey-icons" title="View">
+                                    image
                                     </span>
-                                    <span class="material-icons close" title="Close">
-                                        close
+                                    <span class="material-icons edit" title="Edit">
+                                        edit
                                         </span>
+                                        <span class="material-icons close" title="Close">
+                                            close
+                                            </span>
+                            </div>
+                            <img src="images/images/card-1.jpeg" alt="card" class="section-3-card-photo">
                                     </div>
-                        <img src="images/images/card-1.jpeg" alt="card" class="card3-photo">
                     </div>
-                    <div class="top-bottom">
-                        <p class="card3-p">Beautiful Castle</p>
-                        <p class="card3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque. </p>
+                    <div class="section-3-card-top-bottom">
+                        <p class="section-3-p">Beautiful Castle</p>
+                        <p class="section-3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque. </p>
                     </div>
                 </div>
-                <div class="card3-bottom">
-                    <div class="bottom-left">$899/night</div>
-                    <div class="bottom-right">
-                        <span class="material-icons header-icons">
+                <div class="section-3-card-bottom">
+                    <div class="section-3-card-bottom-left">$899/night</div>
+                    <div class="section-3-card-bottom-right">
+                        <span class="material-icons grey-icons smaller-icons">
                         location_on
                     </span>Barcelona, Spain
                 </div>
                 </div>
             </div>
-            <div class="card3">
-                <div class="card3-top">
-                    <div class="top-top">
-                        <div class="icons">
-                            <span class="material-icons header-icons" title="View">
-                                image
-                                </span>
-                                <span class="material-icons edit" title="Edit">
-                                    edit
+            <div class="section-3-card">
+                <div class="section-3-card-top">
+                    <div class="section-3-card-top-top">
+                        <div class="animation-card">
+                            <div class="ani-card">
+                                <span class="material-icons grey-icons" title="View">
+                                    image
                                     </span>
-                                    <span class="material-icons close" title="Close">
-                                        close
+                                    <span class="material-icons edit" title="Edit">
+                                        edit
                                         </span>
+                                        <span class="material-icons close" title="Close">
+                                            close
+                                            </span>
+                            </div>
+                            <img src="images/images/card-2.jpeg" alt="card" class="section-3-card-photo">
                                     </div>
-                        <img src="images/images/card-2.jpeg" alt="card" class="card3-photo">
                     </div>
-                    <div class="top-bottom">
-                        <p class="card3-p">Office Studio</p>
-                        <p class="card3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque. </p>
+                    <div class="section-3-card-top-bottom">
+                        <p class="section-3-p">Office Studio</p>
+                        <p class="section-3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque. </p>
                     </div>
-                </div>
-                <div class="card3-bottom">
-                    <div class="bottom-left">$1.119/night</div>
-                    <div class="bottom-right">
-                        <span class="material-icons header-icons">
+                    </div>
+                <div class="section-3-card-bottom">
+                    <div class="section-3-card-bottom-left">$1.119/night</div>
+                    <div class="section-3-card-bottom-right">
+                        <span class="material-icons grey-icons smaller-icons">
                         location_on
                     </span>London, UK
                 </div>
                 </div>
             </div>
-            <div class="card3">
-                <div class="card3-top">
-                    <div class="top-top">
-                        <div class="icons">
-                            <span class="material-icons header-icons" title="View">
-                                image
-                                </span>
-                                <span class="material-icons edit" title="Edit">
-                                    edit
-                                    </span>
-                                    <span class="material-icons close" title="Close">
-                                        close
+            <div class="section-3-card">
+                <div class="section-3-card-top">
+                    <div class="section-3-card-top-top">
+                            <div class="animation-card">
+                                <div class="ani-card">
+                                    <span class="material-icons grey-icons" title="View">
+                                        image
                                         </span>
-                                    </div>
-                        <img src="images/images/card-3.jpeg" alt="card" class="card3-photo">
+                                        <span class="material-icons edit" title="Edit">
+                                            edit
+                                            </span>
+                                            <span class="material-icons close" title="Close">
+                                                close
+                                                </span>
+                                </div>
+                                <img src="images/images/card-3.jpeg" alt="card" class="section-3-card-photo">
+                                        </div>
+                        </div>
+                        <div class="section-3-card-top-bottom">
+                            <p class="section-3-p">Cozy 5 Stars Apartaments</p>
+                            <p class="section-3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque.</p>
+                        </div>
                     </div>
-                    <div class="top-bottom">
-                        <p class="card3-p">Cozy 5 Stars Apartaments</p>
-                        <p class="card3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque. </p>
+
+                    <div class="section-3-card-bottom">
+                        <div class="section-3-card-bottom-left">$459/night
+                        </div>
+                        <div class="section-3-card-bottom-right">
+                            <span class="material-icons grey-icons smaller-icons">
+                            location_on
+                        </span>Milan, Italy
+                    </div>
                     </div>
                 </div>
-                <div class="card3-bottom">
-                    <div class="bottom-left">$459/night</div>
-                    <div class="bottom-right">
-                        <span class="material-icons header-icons">
-                        location_on
-                    </span>Milan, Italy
-                </div>
-                </div>
-            </div>
             </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-left">
+            <p class="footer-p">HOME</p>
+            <p class="footer-p">COMPANY</p>
+            <p class="footer-p">PORTOFOLIO</p>
+            <p class="footer-p">BLOG</p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-right-p">©John Doe, 2023</p>
+        </div>
+    </footer>
 </body>
-
 </html>
