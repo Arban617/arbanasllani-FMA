@@ -44,7 +44,7 @@ aside{
 .material-icons{
     color: var(--aside-icons-color);
 }
-.dashboard{
+.dashboard-aside{
     display: flex;
     align-items: center;
     gap: 13%;
@@ -169,8 +169,8 @@ cursor: pointer;
 }
 .notifications-5{
     position: absolute;
-    top: 5px;
-    right: 3.5vw;
+    top: 10px;
+    right: 3.6vw;
     width: 20px;
     height: 20px;
     display: flex;
@@ -412,7 +412,7 @@ iframe{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 10%;
+    bottom: 13%;
 }
 .section-3-card-top-bottom{
     display: flex;
