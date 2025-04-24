@@ -1,189 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Image Hover Reveal Icons</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style>
-    body {
-      background: #f4f4f4;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+    .section-3-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: var(--second-page-color);
+    width: 100%;
+    max-width: 400px; /* Keeps card from growing too wide */
+    height: calc(45vh + 100px); /* Grows with screen height */
+    margin: 1rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-3-card-top {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.section-3-card-top-top {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3-card-photo {
+    position: absolute;
+    bottom: -32%;
+    width: 90%;
+    height: 100%;
+    border-radius: 7px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.section-3-card-top-top:hover .section-3-card-photo {
+    transform: translateY(-30px);
+}
+
+.ani-card {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    top: 120%;
+    width: auto;
+}
+
+.animation-card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40%;
+}
+
+.section-3-card-top-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.edit {
+    color: green;
+    margin-left: 10px;
+}
+
+.close {
+    color: red;
+    margin-left: 10px;
+}
+
+.section-3-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 80%;
+    border-top: 1px solid lightgrey;
+    font-size: 0.9rem;
+}
+
+.section-3-card-bottom-left, .section-3-card-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.section-3-p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.section-3-p2 {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+  @media (max-width: 768px) {
+    .section-3-card {
+        width: 90%;
+        height: auto; /* Let it grow naturally */
+        padding: 1rem;
     }
 
-    .s3-card {
-      width: 320px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: 0.3s ease;
+    .section-3-card-photo {
+        position: static;
+        width: 100%;
+        height: auto;
     }
 
-    .image-wrapper {
-      position: relative;
-      height: 200px;
-      overflow: hidden;
+    .ani-card, .animation-card {
+        display: none; /* Hide hover icons on small screens */
     }
 
-    .image-floater {
-      position: relative;
-      z-index: 2;
-      transition: transform 0.4s ease;
+    .section-3-p {
+        font-size: 1rem;
     }
 
-    .card-1 {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: block;
+    .section-3-p2 {
+        font-size: 0.85rem;
     }
+}
 
-    .image-icons {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 60px;
-      background: rgba(255, 255, 255, 0.95);
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      opacity: 0;
-      transition: opacity 0.3s ease;
+@media (max-width: 480px) {
+    .section-3-card-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        height: auto;
     }
-
-    .image-icons .material-icons {
-      background: #fff;
-      padding: 8px;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      font-size: 20px;
-      color: #444;
-    }
-
-    .s3-card:hover .image-floater {
-      transform: translateY(-60px);
-    }
-
-    .s3-card:hover .image-icons {
-      opacity: 1;
-    }
-
-    .top-bottom {
-      padding: 15px;
-    }
-
-    .card-1-p {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin: 0 0 10px;
-      color: #333;
-    }
-
-    .card-1-p2 {
-      font-size: 0.95rem;
-      color: #666;
-      line-height: 1.5;
-    }
-
-    .s3-card-bottom {
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid #eee;
-    }
-
-    .bottom-right {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      color: #555;
-    }
-
-    .bottom-left p {
-      font-weight: bold;
-      color: #222;
-    }
-
-    .material-icons.header-icons {
-      font-size: 18px;
-      color: #ff6b6b;
-    }
-  </style>
+}
+</style>
 </head>
 <body>
+              <div class="section-3-card">
+                <div class="section-3-card-top">
+                    <div class="section-3-card-top-top">
+                            <div class="animation-card">
+                                <div class="ani-card">
+                                    <span class="material-icons grey-icons" title="View">
+                                        image
+                                        </span>
+                                        <span class="material-icons edit" title="Edit">
+                                            edit
+                                            </span>
+                                            <span class="material-icons close" title="Close">
+                                                close
+                                                </span>
+                                </div>
+                                    <img src="card-3.jpegs" alt="card" class="section-3-card-photo">
+                                        </div>
+                        </div>
+                        <div class="section-3-card-top-bottom">
+                            <p class="section-3-p">Cozy 5 Stars Apartaments</p>
+                            <p class="section-3-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, maiores. Blanditiis sit neque enim odio aut corpori. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus incidunt rerum accusamus sequi cumque.</p>
+                        </div>
+                    </div>
 
-  <div class="s3-card">
-    <div class="image-wrapper">
-      <div class="image-floater">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Apartment" class="card-1">
-      </div>
-      <div class="image-icons">
-        <span class="material-icons">favorite</span>
-        <span class="material-icons">share</span>
-        <span class="material-icons">visibility</span>
-      </div>
-    </div>
-
-    <div class="top-bottom">
-      <p class="card-1-p">Cozy 5 Stars Apartment</p>
-      <p class="card-1-p2">Modern apartment in the heart of Milan with stunning views and great amenities.</p>
-    </div>
-
-    <div class="s3-card-bottom">
-      <div class="bottom-left">
-        <p>$449/night</p>
-      </div>
-      <div class="bottom-right">
-        <span class="material-icons header-icons">location_on</span>
-        Milan, Italy
-      </div>
-    </div>
-  </div>
-
+                    <div class="section-3-card-bottom">
+                        <div class="section-3-card-bottom-left">$459/night
+                        </div>
+                        <div class="section-3-card-bottom-right">
+                            <span class="material-icons grey-icons smaller-icons">
+                            location_on
+                        </span>Milan, Italy
+                    </div>
+                    </div>
+                </div>
 </body>
 </html>
-
-iframe{
-  width: 810px;
-  height: 250px;
-}
-.embedded-map{
-  margin-right:0px;
-  border: none;
-  margin-left: 40px;
-}
-
-
-
-
-@media (max-width:1500px){
-  .section-2-card{
-      width: 36.9vw;
-  }
-  .section-3-card{
-      flex-wrap: wrap;
-  }
-}
-@media (max-width:1400px){
-  .section-2-card{
-      width: 36.8vw;
-  }
-}
-@media (max-width:1300px){
-  .section-2-card{
-      width: 36.7vw;
-  }
-}
-@media (max-width:1200px){
-  .section-2-card{
-      width: 36.6vw;
-  }
-}
