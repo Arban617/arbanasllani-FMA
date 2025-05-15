@@ -454,7 +454,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 240px;
+    margin-top: 340px;
     justify-self: center;
     height: 100%;
     border-top: 1px solid grey;
@@ -475,6 +475,12 @@ footer{
 }
 .smaller-icons{
     font-size: 18px;
+}
+.manage-listings{
+    font-size: x-large;
+    margin-bottom: -30px;
+    margin-top: -40px;
+    margin-right: 80%;
 }
 @media (max-width:1350px){
     .notifications-5{
@@ -532,7 +538,7 @@ footer{
         font-size: 12px;
     }
     .components{
-        gap: 5px;
+        gap: 3px;
     }
     .main{
         width: 104%;
@@ -564,6 +570,9 @@ footer{
     }
     .footer-left{
         width: 70%;
+    }
+    .manage-listings{
+        margin-bottom: 0px;
     }
 }
 @media (max-width:1150px){
@@ -636,7 +645,7 @@ footer{
         margin-left: 0;
     }
     .section-3-card{
-        margin-top: 100px;
+        margin-top:10px;
         width: 92%;
         height: 800px;
     }
@@ -656,7 +665,7 @@ footer{
     }
     .animation-card{
         bottom: -50%;
-        margin-top: 250px;
+        margin-top: 240px;
     }
     .footer-left{
         width: 60%;
@@ -666,6 +675,10 @@ footer{
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 50px;
+    }
+    .manage-listings{
+        margin-right: 70%;
     }
 }
 @media (max-width:1070px){
@@ -677,6 +690,9 @@ footer{
     }
     .section-3-card-photo{
         bottom: 10%;
+    }
+    .manage-listings{
+        margin-bottom: 30px;
     }
 }
 @media (max-width:930px){
@@ -728,6 +744,7 @@ footer{
         background-color: var(--second-page-color);
         width: 90%;
         height: 600px;
+        margin-top: 90px;
     }
     .section-3-card-top{
         height: 75%;
@@ -779,5 +796,9 @@ footer{
     }
     footer{
         width: 90%;
+    }
+    .manage-listings{
+        margin-right: 60%;
+        margin-bottom: -20px;
     }
 }
